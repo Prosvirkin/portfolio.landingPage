@@ -1,32 +1,9 @@
 $(document).ready(function() {
 
-	$(".toggle-mnu, .menu_item").click(function() {
-		$(".sandwich").toggleClass("active");
-	});
+ $(".burger_mnu").click(function() {
+ 	$(this).next().slideToggle();
+ });
 
-	$(".toggle-mnu").click(function(){
-		if ($(".top-mnu").is(":visible")){
-			$(".top-mnu").fadeOut(600);
-		} else{
-			$(".top-mnu").fadeIn(600);
-		};
-	});
-
-	$(".link-ski").click(function(){
-			$(".top-mnu").fadeOut(600);
-	});
-
-	$(".link-instagram").click(function(){
-			$(".top-mnu").fadeOut(600);
-	});
-
-	$(".link-music").click(function(){
-			$(".top-mnu").fadeOut(600);
-	});
-
-	$(".link-aboutme").click(function(){
-			$(".top-mnu").fadeOut(600);
-	});
 
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
@@ -57,51 +34,41 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$(".link-ski").click(function() {
-		$.scrollTo($(".sport"), 800, {
-			offset: 0
-		});
-	});
-
-		$(".link-instagram").click(function() {
-		$.scrollTo($(".instargam"), 800, {
-			offset: 0
-		});
-	});
-
-		$(".link-music").click(function() {
-		$.scrollTo($(".music"), 800, {
-			offset: 0
-		});
-	});
-
-		$(".link-aboutme").click(function() {
-		$.scrollTo($("footer"), 800, {
+	$("a.scroll").click(function() {
+		$.scrollTo($(".div"), 800, {
 			offset: -90
 		});
 	});
 
-
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
+	var owl = $("#slide");
 	owl.owlCarousel({
-		items : 4
-	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
+		items : 1,	//Количество слайдов при разрешении экрана более 1000px
+		itemsDesktop : [1000,1], //При разрешении экрана от 901px до 1000px
+		itemsDesktopSmall : [900,1], // При разрешении экрана от 601px до 900px
+		itemsTablet: [600,1], //При разрешении экрана от 0 до 600px 
+		autoPlay : 2000,
+		paginationSpeed : 1000,
+		touchDrag : false,
+		mouseDrag : true,
+    });
+	/*owl.on("mousewheel", ".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {
 			owl.trigger("owl.prev");
 		} else {
 			owl.trigger("owl.next");
 		}
 		e.preventDefault();
-	});
+	});*/
 	$(".next_button").click(function(){
 		owl.trigger("owl.next");
 	});
 	$(".prev_button").click(function(){
 		owl.trigger("owl.prev");
 	});
+
+
 
 	//Кнопка "Наверх"
 	//Документация:
@@ -133,9 +100,57 @@ $(document).ready(function() {
 });
 
 
- $(".sport").animated("bounceInLeft");
- $(".ski").animated("bounceInRight");
- $(".instargam").animated("bounceInLeft");
- $(".music").animated("bounceInRight");
-  $(".spotify").animated("bounceInLeft");
-	$(".itunes").animated("bounceInRight");
+/* карусельки */
+
+var owl = $("#slide_clients");
+	owl.owlCarousel({
+		items : 1,	//Количество слайдов при разрешении экрана более 1000px
+		itemsDesktop : [1000,1], //При разрешении экрана от 901px до 1000px
+		itemsDesktopSmall : [900,1], // При разрешении экрана от 601px до 900px
+		itemsTablet: [600,1], //При разрешении экрана от 0 до 600px 
+		autoPlay : 2000,
+		paginationSpeed : 1000
+		
+    });
+	/*owl.on("mousewheel", ".owl-wrapper", function (e) {
+		if (e.deltaY > 0) {
+			owl.trigger("owl.prev");
+		} else {
+			owl.trigger("owl.next");
+		}
+		e.preventDefault();
+	});*/
+	$(".next_button").click(function(){
+		owl.trigger("owl.next");
+	});
+	$(".prev_button").click(function(){
+		owl.trigger("owl.prev");
+	});
+
+
+var owl = $("#other_domain");
+	owl.owlCarousel({
+		items : 1,	//Количество слайдов при разрешении экрана более 1000px
+		itemsDesktop : [1000,1], //При разрешении экрана от 901px до 1000px
+		itemsDesktopSmall : [900,1], // При разрешении экрана от 601px до 900px
+		itemsTablet: [600,1], //При разрешении экрана от 0 до 600px 
+		autoPlay : 2000,
+		paginationSpeed : 1000
+		
+    });
+	/*owl.on("mousewheel", ".owl-wrapper", function (e) {
+		if (e.deltaY > 0) {
+			owl.trigger("owl.prev");
+		} else {
+			owl.trigger("owl.next");
+		}
+		e.preventDefault();
+	});*/
+	$(".next_button").click(function(){
+		owl.trigger("owl.next");
+	});
+	$(".prev_button").click(function(){
+		owl.trigger("owl.prev");
+	});
+
+
