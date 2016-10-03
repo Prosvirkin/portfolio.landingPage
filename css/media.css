@@ -2,63 +2,84 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	
 
-
-	.main_mnu ul{
+	.mnu{
+		background-color: #fd926d;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	
+	.mnu ul{
 		display: none;
-		background-color: #ff8261;
+		background-color: #fd926d;
 		position: absolute;
 		width: 50%;
+		top: 80%;
 		z-index: 20;
 	}
 
-	.main_mnu ul li{
+	.mnu li{
 		display: block;
+		padding-left: 20px;
 	}
 
-	.bg_hosting{
-		height: 20px;
-		overflow: hidden;
+	.mnu li:hover{
+		background: #eb805b;
+		-webkit-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 
-	.bg_hosting {
-		width: 100%
-	}
-	
-	.input_name{
-		width: 100%;
+	.drop-mnu li{
+		display: none;
 	}
 
-
-	.input_email{
-		width: 100%;
+	.mnu li:hover .drop-mnu li {
+		display: none;
 	}
 
-	.newsletter input {
-		min-width: 570px;  
+	.next-button,
+	.prev-button{
+		top: 40%;
+		padding: 25px 10px;
 	}
 
-	.support_search input{
-		min-width: 80%;
+	.clearance-model .item{
+		min-height: 0px;
+		border: 1px solid #f7f7f7;
+		background-color: #f7f7f7;
+
 	}
 
-	.featured_services img{
-		width: 100%;
-		height: 130px;
+	.catalog-next-button{
+		right: 0px;
 	}
 
-	.service_name p{
-		padding: 0px 0px 25px 20px;
+	.catalog-prev-button{
+		right: 40px;
 	}
 
-	.news_name p{
-		padding: 0px 0px 25px 0px;
+	.catalog label{
+		left: 0px;
 	}
 
-	.news_date img{
-		width: 80%;
-		height: 50%;
-		padding-bottom: 85px;
+	.brands h2{
+		left: 42%;
+	}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.select-size{
+		padding-top: 30px;
+	}
+
+	.slider-range-wrapper button{
+		margin-top: 10px;
+		float: left;
 	}
 
 
@@ -67,313 +88,377 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-
-	.next_button{
-		right: 150px;
-		padding: 2px 15px;
+	.next-button,
+	.prev-button{
+		padding: 15px 10px;
 	}
 
-	.prev_button{
-		left: 150px;
-		padding: 2px 15px;
+	.clearance-model .item{
+		min-height:  340px;
 	}
 
-	.search input{
-		width: 250px
+	.clearance-model .item{
+		min-height: 0px;
+		border: 1px solid #f7f7f7;
+		background-color: #f7f7f7;
 	}
 
-	.view{
+	.brands h2{
 		left: 40%;
-		bottom: 20px;
 	}
 
-	.details p{
-		padding-top: 10px;
-		line-height: 24px;
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+	
+
+	.carousel-content h2{
+		padding-top: 0%;
 	}
 
-	.details_quote p{
-		padding: 0;
-		font-family: "OpenSansItalic";
-		display: block;
+	.carousel-content h3{
+		padding: 5px 0;
+		font-size: 28px;
 	}
 
-	.details_quote{
-		position: inherit;
-		margin-bottom: 40px;
-	}
-
-	.social_contaсt{
+	.sort{
 		float: none;
-		padding-top: 5px;
-	}
-
-	.info{
-		float: none;
-	}
-
-	.info_team{
-		padding: 20px 0 40px 0;
-	}
-
-	.follow_steps img {
-		padding: 10px 15px 10px 0px;
-		float: left;
-	}
-
-	.fs_content{
-		padding: 20px 0px; 
-	}
-
-	.domain_name_reg {
-		margin-bottom: 30px;
-		width: 550px;
-	}
-
-	.domain_selection {
-		margin-bottom: 30px;
-		width: 568px;
-	}
-
-	.year_selection{
-		margin-bottom: 30px;
-		width: 568px;
-	}
-
-	.other_domain img{
 		margin-bottom: 20px;
 	}
 
-	.faq{
-		padding-bottom: 0px;
+	.pagination{
+		float: none;
 	}
-
-	.your_questions{
-		margin-bottom: 60px;
-	}
-
-	.newsletter input {
-		min-width: 400px;  
-		margin: 35px 0 60px 0px;
-	}
-
-	.service_name p{
-		padding: 0px;
-	}
-
-	.service_name h4{
-		padding: 0px 0px 10px 0px;
-	}
-	
-	.latest_news{
-		padding-top: 0px;
-	}
-
-	.view{
-		margin: 10px 0 20px 0;
-	}
-
-	.features
-	.name{
-		padding-left: 0px;
-		padding-top: 20px;
-	}
-
-	.features img{
-		max-width: 100%;
-	}
-
-
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.next_button{
-		right: 50px;
-		padding: 2px 15px;
+
+	.top-line-left{
+		float: none;
+		text-align: center;
 	}
 
-	.prev_button{
-		left: 50px;
-		padding: 2px 15px;
+	.top-line-right{
+		float: none;
+		text-align: center;
+		padding: 5px 0;
 	}
 
-	.search input{
-		width: 160px
+	.top-line-right ul{
+		border: none;
 	}
 
-	.search select{
-		width: 100px;
+	.next-button,
+	.prev-button{
+		top: 30%;
+		padding: 15px 10px;
 	}
 
-	.search_button{
-		width: 70px;
-		margin-bottom: 30px;
+	.advertising button{
+		padding: 5px 5px;
+		font-size: 12px;
+		top: -40px;
+		left: 15px;
 	}
 
-	.your_questions{
-		margin-left: 20px;
+	.catalog label {
+		left: 1%;
 	}
 
-	.your_questions input{
-		width: 83%;
+	.catalog-next-button{
+		right: 1%;
 	}
 
-	.submit_testimonial
-	.name{
-		padding-left: 20px;
+	.catalog-prev-button{
+		right: 6%;
+	}
+
+	.basket	{
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.logo img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.contact{
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.brands h2{
+		left: 38%;
+	}
+
+	.contact-email{
+		float: none;	
+		text-align: center;
+	}
+
+	.contact-email span{
+		display: none;
+	}
+
+	.contact-email input{
+		padding: 10px 50px; 
+		margin-bottom: 10px;
+	}
+
+	.contact-email button{
+		padding: 7px 12px; 
+	}
+
+	.contact-social{
+		float: none;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.contact-social span{
+		margin-top: 15px;
+	}
+
+	.contact-social ul{
+		display: inline-block;
+		float: none;
+	} 
+
+	.clearance img{
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+
+	.carousel-content h2{
+		padding: 0%;
+	}
+
+	.carousel-content h3{
+		padding:0;
+		font-size: 28px;
+	}
+
+	.carousel-content button{
+		margin-top: 10px;
+		padding: 5px;
+	}
+
+	.select-size{
+		padding-top: 0px;
+	}
+
+	.slider-range-wrapper button{
+		margin-top: 0px;
+		float: none;
 	}
 	
-	.newsletter input {
-		min-width: 250px;  
-		margin: 35px 0 0px 0px;
+	.slider-range-wrapper p label{
+		display: none;
 	}
 
-	.newsletter .signup {
-		width: 160px;
-		margin-left: 0px;
+	.related-products h2 {
+    left: 40%;
+}
+
+}
+
+@media only screen and (max-width : 640px) {
+
+	.catalog label {
+		display: block;
 	}
 
-	.domain_name_reg {
-		margin-bottom: 30px;
-		width: 350px;
+	.carousel-container{
+		display: none;
 	}
 
-	.domain_selection {
-		margin-bottom: 30px;
-		width: 368px;
+	.advertising{
+		display: none;
 	}
 
-	.year_selection{
-		margin-bottom: 30px;
-		width: 368px;
+	.brands h2{
+		left: 35%;
 	}
 
-
-
-
-	/* Extra Small Devices, Phones */
-	@media only screen and (max-width : 480px) {
-		.next_button{
-			right: 20px;
-			padding: 2px 15px;
-		}
-
-		.prev_button{
-			left: 20px;
-			padding: 2px 15px;
-		}
-
-		.search input{
-			width: 290px
-		}
-
-		.search select{
-			width: 296px
-		}
-
-		.search_button{
-			width: 296px;
-			margin-top: 30px;
-		}
-
-		.search input{
-			width: 275px;
-		}
-
-		.view{
-			left: 50%;
-		}
-
-		.your_questions{
-			margin-left: 20px;
-			margin-bottom: 40px;
-		}
-
-		.button_faq{
-			width: 300px;
-		}
-
-		.support_search
-		.search_button{
-			margin-left: -5px;
-			height: 50px;
-			width: 20%;
-		}
-
-		.next_button, 
-		.prev_button{
-			display: none;
-		}
-
-		#slide img{
-			width: 100%;
-		}
-
-		.domain_name_reg {
-		margin-bottom: 30px;
-		width: 250px;
+	.catalog-next-button{
+		bottom: 25%;
+		right: 0%;
 	}
 
-	.domain_selection {
-		margin-bottom: 30px;
-		width: 268px;
+	.catalog-prev-button{
+		bottom: 25%;
+		left: 0%;
 	}
 
-	.year_selection{
-		margin-bottom: 30px;
-		width: 268px;
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.social-links	{
+		min-height: 120px;
 	}
 
+	.social-links span{
+		text-align: center;
+		padding: 10px 5px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	.catalog label {
+		display: block;
+		left: 0%;
+		height: 45px;
+		padding: 10px 10px;
+		font-family: "ArialRegular";
+		font-size: 12px; 
 	}
 
-	/* Custom, iPhone Retina */
-	@media only screen and (max-width : 320px) {
-		.view{
-			left: 60%;
-			width: 100px;
-		}
-
-		
-		
-		
-		.next_button, 
-		.prev_button{
-			display: none;
-		}
-
+	.catalog-next-button,
+	.catalog-prev-button{
+		bottom: 25%;
 	}
 
-
-	/*==========  Mobile First Method  ==========*/
-
-	/* Custom, iPhone Retina */
-	@media only screen and (min-width : 320px) {
-
+	.catalog-next-button{
+		right: 0%;
 	}
 
-	/* Extra Small Devices, Phones */
-	@media only screen and (min-width : 480px) {
-
+	.catalog-prev-button{
+		left: 0%;
 	}
 
-	/* Small Devices, Tablets */
-	@media only screen and (min-width : 768px) {
-
+	.clearance{
+		padding-top: 20px;
 	}
 
-	/* Medium Devices, Desktops */
-	@media only screen and (min-width : 992px) {
-
+	.model .item {
+		min-height: 0px;
+		max-height: 410px;
 	}
 
-	/* Large Devices, Wide Screens */
-	@media only screen and (min-width : 1200px) {
-
-		.main_mnu ul{
-			display: block !important;
-		}
-
-
+	.model .shop-it{
+		left: 15%;
 	}
+
+	.clearance-content hr{
+		margin-top: 50%;
+	}
+
+	
+	footer ul{
+		padding-bottom: 10px;
+	}
+	
+	footer li{
+		display: block;
+		padding-bottom: 5px;
+	}
+
+		.related-products h2 {
+    left: 35%;
+}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.colors{
+		float: none;
+		margin-top: 15px;
+	}
+
+	.add-product button{
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		padding: 8px;
+	}
+	
+		.related-products h2 {
+    left: 25%;
+}
+	/*
+	=============================================
+	Product (Next Page)
+	=============================================
+	*/
+
+	.social-links	{
+		min-height: 140px;
+		margin-top: 40px;
+	}
+
+	.model .shop-it{
+		top: 20%;
+		left: 10%;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.catalog-next-button,
+	.catalog-prev-button{
+		bottom: -60%;
+	}
+	
+	.model .shop-it{
+		top: 10%;
+		left: 5%;
+	}
+
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.mnu ul{
+		display: block !important;
+	}
+}
