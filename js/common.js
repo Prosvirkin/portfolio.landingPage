@@ -57,7 +57,7 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() { //Change
+/*	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
@@ -71,7 +71,7 @@ $(document).ready(function() {
 			}, 1000);
 		});
 		return false;
-});
+});*/
 
 
 });
