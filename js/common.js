@@ -57,11 +57,11 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("main-from").submit(function() { //Change
+	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "../mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Сообщение отправлено!");
@@ -73,7 +73,6 @@ $(document).ready(function() {
 		return false;
 });
 
-	$("input, select, textarea").jqBootstrapValidation();
 
 });
  
