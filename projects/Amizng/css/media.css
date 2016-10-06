@@ -1,0 +1,117 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.sport{
+		min-height: 150px;
+	}
+
+	.sport h2{
+		padding-top: 45px;
+	}	
+
+	.instargam p{
+		margin: 0;
+		font-size: 16px;
+	}
+
+	.instargam h2{
+		padding: 10px 0px;
+		margin: 0;
+		font-size: 18px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.toggle-mnu{
+		margin-top: 15px;
+	}
+
+	.name h1{
+		padding-top: 160px;
+	}
+
+	.instargam img{
+		width: 65%;
+		height: auto;
+	}
+
+	.subscribe{
+		padding-left: 50px;
+		padding-bottom: 50px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.instargam-content{
+		padding-top: 10%;
+		padding-left: 20%;
+	}
+
+	button{
+		margin-left: 20%; 
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.spotify,
+	.itunes{
+		padding: 50px 50px; 
+	}
+
+	.about-me{
+		padding-left: 10px;
+	}
+
+	.subscribe{
+		padding-left: 10px;
+	}
+
+	.subscribe input{
+		width: 350px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.subscribe input{
+		width: 250px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

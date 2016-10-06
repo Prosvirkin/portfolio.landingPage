@@ -1,0 +1,598 @@
+*::-webkit-input-placeholder {
+	opacity: 1;
+	font-family:"SourceSansProRegular";
+	font-size: 16px;
+	color:#848484;
+	
+}
+*:-moz-placeholder {
+	opacity: 1;
+	font-family:"SourceSansProRegular";
+	font-size: 16px;
+	color:#848484;
+	
+}
+*::-moz-placeholder {
+	opacity: 1;
+	font-family:"SourceSansProRegular";
+	font-size: 16px;
+	color:#848484;
+	
+}
+*:-ms-input-placeholder {
+	opacity: 1;
+	font-family:"SourceSansProRegular";
+	font-size: 16px;
+	color:#848484;
+	
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+	font-family:"RalewayMedium";
+}
+
+h2{
+	font-size: 35px;
+	color: #353535;
+	font-family:"RalewayMedium";
+}
+
+h3{
+	font-size: 16px;
+	color: #353535;
+	font-family:"RalewaySemiBold";
+	font-weight: lighter;
+}
+
+p {
+	font-size: 16px;
+	color: #727272;
+	font-family:"SourceSansProRegular";
+}
+
+.line {
+	border: 1px solid #7bbdfd;
+	width: 70px;
+	float: left;
+	margin: 0;
+}
+
+
+/*
+==========================================================================
+Header
+==========================================================================
+*/
+
+header{
+	background: url(../images/header_bg.png);
+	min-height: 750px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+}
+
+.header_top_line{
+	padding-top: 50px;
+}
+
+.logo{
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	font-family:"WalkwayBlack";
+}
+
+.logo span{
+	color:#5597e2;
+	font-weight: bold;
+}
+
+.nav_icon{
+	float: right;
+	padding-top: 15px;
+}
+
+.nav_icon a{
+	color: #fff;
+	font-size: 24px;
+	margin-right: 5px;
+}
+
+.best_solution {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.best_solution p{
+	font-size: 20px;
+	color: #fff;
+}
+
+.best_solution span{
+	color:#5597e2;
+	font-family: "RalewayBold" ;
+}
+
+.get_started{
+	min-height: 100px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.get_started input{
+	background-color: #000;
+	margin-top: 25px;
+	height: 50px;
+	padding-left: 10px;
+	border-radius: 2px;
+	border: 1px solid #5698e3;
+	border-left: 3px solid  #5698e3;
+}
+
+.get_started button{
+			background-color: #008ed6;
+	margin-top: 25px;
+	height: 50px;
+	width: 180px;
+	border-radius: 2px;
+	border: 1px solid #008ed6;
+	border-left: 3px solid  #008ed6;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	font-family: "RalewayBold";
+	margin-bottom: 20px;
+}
+
+.get_started button:hover{
+	background-color: #1070b3;
+	border: 1px solid #1070b3;
+	border-left: 3px solid  #1070b3;
+}
+
+.register{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.register p{
+	padding-left: 29%; 
+}
+
+.register img{
+	position: absolute;
+	top: 5px;
+	right: 15%;
+}
+
+/*
+========================================================================
+Explore
+========================================================================
+*/
+
+.explore{
+	min-height: 625px;
+	padding-top: 100px;
+}
+
+.browser-img img{
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.explore h2{
+	margin-top: 0px;
+}
+
+.explore p {
+	padding-top: 30px;
+	margin-bottom: 50px;
+}
+
+.Customize {
+	float: left;
+	padding-right: 20px;
+}
+
+.QualityDesign{
+	float: left;
+	padding-right: 20px;
+}
+
+.par p{
+	margin: 0 0 27px 0;
+	padding: 0 0 0 52px;
+}
+
+
+/*
+========================================================================
+Describe
+========================================================================
+*/
+
+.describe{
+	min-height: 625px;
+	padding-top: 100px;
+	background-color: #f7f8fa;
+}
+
+.describe_content p {
+	padding-top: 30px;
+	margin-bottom: 50px;
+}
+
+.describe_content h2{
+	margin-top: 0;
+}
+
+.par p{
+	margin: 0 0 27px 0;
+	padding: 0 0 0 52px;
+}
+
+.browser{
+	padding-top: 30px;
+}
+
+/*
+========================================================================
+LandX
+========================================================================
+*/
+
+.landx{
+	min-height: 850px;
+	text-align: center;
+	padding-top: 85px;
+}
+
+.landx h2{
+	margin-bottom: 15px;
+}
+
+.line_center{
+	border: 1px solid #7bbdfd;
+	width: 70px;
+	margin: 0 auto;
+}
+
+.landx_content {
+	padding-top: 80px;
+}
+
+.landx_content p{
+	padding-bottom: 80px;
+}
+
+/*
+========================================================================
+Pricing table
+========================================================================
+*/
+
+.pricing_table{
+	min-height: 850px;
+	text-align: center;
+	padding-top: 85px;
+	background-color: #f7f8fa;
+}
+
+.table_border{
+	border: 1px solid #e4e4e4;
+}
+
+.table_header{
+	min-height: 100px;
+	background-color: #353535;
+}
+
+.table_header h3{
+	margin: 0;
+	padding: 10px 0 0 0;
+	color: #fff;
+	font-size: 24px;
+}
+
+.table_header p{
+	color: #fff;
+}
+
+.table_header span{
+	font-weight: bold;
+	color: #5597e2;
+}
+
+.table_content ul{
+	margin: 0;
+	padding: 0 25px;
+	list-style-type: none;
+	text-align: left;
+}
+
+.table_content span{
+	float: right;
+}
+.table_content li{
+	border-bottom: 1px dotted #e4e4e4;
+	padding: 10px 0;
+	color: #353535;
+
+}
+
+.table_footer{
+	min-height: 75px;
+	padding:25px;
+	text-align: left;
+}
+
+.table_footer span{
+	font-size: 18px;
+	color: #353535;
+	font-family: "RalewayBold" ;
+
+}
+
+.table_footer button{
+	float: right;
+	border: 1px solid #717171;
+	border-radius: 3px;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #727272;
+	font-family: "RalewayBold";
+	padding: 5px 10px;
+}
+
+.table_footer button:hover{
+	border: 1px solid #5698e3;
+	background-color: #5698e3;
+	color: #fff;
+}
+
+/*
+========================================================================
+Watch Video
+========================================================================
+*/
+
+.watch_video{
+	min-height: 855px;
+	text-align: center;
+	padding-top: 85px;
+}
+
+
+
+/*
+========================================================================
+Product Screenshots
+========================================================================
+*/
+
+.product_screenshots {
+	min-height: 675px;
+	background-color: #f7f8fa;
+	text-align: center;
+	padding-top: 85px;
+}
+
+
+
+#slider .item{
+	margin: 3px;
+}
+
+#slider .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 10px;
+	padding-right: 30px;
+}
+
+.owl-page {
+display: inline-block;
+width: 12px;
+height: 12px;
+margin: 5px 7px;
+filter: Alpha(Opacity=50);
+opacity: 0.5;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: #7cc9ff;
+}
+
+.active {
+	background-color: #5698e3;
+}
+
+
+/*
+========================================================================
+trusted
+========================================================================
+*/
+
+.trusted{
+	min-height: 800px;
+	text-align: center;
+	padding-top: 85px;
+}
+
+.brand{
+	margin:80px 0px 100px 0px;
+	word-spacing: 50px;
+}
+
+.quotation{
+	position: relative;
+	border: 1px solid #f7f8fa;
+	border-bottom: 3px solid #e5e5e5;
+	background-color: #f7f8fa;
+	border-radius: 3px;
+}
+
+
+
+.quotation p{
+	padding: 50px 0 30px 0;
+}
+
+.square{
+    
+    position: absolute;
+    top: -25px;
+    right: 155px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: -19px;
+    right: 162px;
+}
+
+h5{
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: #0199e6;
+	font-family:"RalewaySemiBold";
+}
+
+
+.network{
+	margin-bottom: 60px;
+}
+
+
+/*
+========================================================================
+Ready
+========================================================================
+*/
+
+.ready{
+	min-height: 450px;
+	background: url(../images/bg2.png);
+	background-position: top center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.ready p{
+	color: #fff;
+	font-family: "RalewayBold" ;
+}
+
+.ready p{
+	margin-top: 120px;
+	font-size: 20px;
+}
+
+.ready h2{
+	margin-top: 0px;
+	color: #fff;
+}
+
+.ready button{
+		background-color: #008ed6;
+	margin-top: 25px;
+	height: 50px;
+	width: 180px;
+	border-radius: 2px;
+	border: 1px solid #008ed6;
+	border-left: 3px solid  #008ed6;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
+	font-family: "RalewayBold";
+}
+
+.ready button:hover{
+	background-color: #1070b3;
+	border: 1px solid #1070b3;
+	border-left: 3px solid  #1070b3;
+}
+
+/*
+========================================================================
+Contact
+========================================================================
+*/
+
+.contact{
+	min-height: 230px;
+	text-align: center;
+}
+
+.contact h3{
+	padding-top: 60px;
+}
+
+.contact a{
+	font-family: "RalewayBold";
+	color: #008ed6;
+}
+
+/*
+========================================================================
+Footer
+========================================================================
+*/
+
+.footer{
+	min-height: 280px;
+	background-color: #f7f8fa;
+	text-align: center;
+}
+
+.logo_footer{
+	padding-top: 70px;
+	color: #000;
+	font-size: 35px;
+	font-family:"WalkwayBlack";
+}
+
+.logo_footer span{
+	color:#5597e2;
+	font-weight: bold;
+}
+
+.soc_footer {
+	font-size: 24px;
+	word-spacing: 10px;
+}
+
+.soc_footer a{
+	color: #919191;
+}
+
+.soc_footer a:hover{
+	color: #008ed6;
+}
+

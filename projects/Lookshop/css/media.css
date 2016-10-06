@@ -1,0 +1,464 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+
+	.mnu{
+		background-color: #fd926d;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	
+	.mnu ul{
+		display: none;
+		background-color: #fd926d;
+		position: absolute;
+		width: 50%;
+		top: 80%;
+		z-index: 20;
+	}
+
+	.mnu li{
+		display: block;
+		padding-left: 20px;
+	}
+
+	.mnu li:hover{
+		background: #eb805b;
+		-webkit-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+
+	.drop-mnu li{
+		display: none;
+	}
+
+	.mnu li:hover .drop-mnu li {
+		display: none;
+	}
+
+	.next-button,
+	.prev-button{
+		top: 40%;
+		padding: 25px 10px;
+	}
+
+	.clearance-model .item{
+		min-height: 0px;
+		border: 1px solid #f7f7f7;
+		background-color: #f7f7f7;
+
+	}
+
+	.catalog-next-button{
+		right: 0px;
+	}
+
+	.catalog-prev-button{
+		right: 40px;
+	}
+
+	.catalog label{
+		left: 0px;
+	}
+
+	.brands h2{
+		left: 42%;
+	}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.select-size{
+		padding-top: 30px;
+	}
+
+	.slider-range-wrapper button{
+		margin-top: 10px;
+		float: left;
+	}
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.next-button,
+	.prev-button{
+		padding: 15px 10px;
+	}
+
+	.clearance-model .item{
+		min-height:  340px;
+	}
+
+	.clearance-model .item{
+		min-height: 0px;
+		border: 1px solid #f7f7f7;
+		background-color: #f7f7f7;
+	}
+
+	.brands h2{
+		left: 40%;
+	}
+
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+	
+
+	.carousel-content h2{
+		padding-top: 0%;
+	}
+
+	.carousel-content h3{
+		padding: 5px 0;
+		font-size: 28px;
+	}
+
+	.sort{
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.pagination{
+		float: none;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.top-line-left{
+		float: none;
+		text-align: center;
+	}
+
+	.top-line-right{
+		float: none;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.top-line-right ul{
+		border: none;
+	}
+
+	.next-button,
+	.prev-button{
+		top: 30%;
+		padding: 15px 10px;
+	}
+
+	.advertising button{
+		padding: 5px 5px;
+		font-size: 12px;
+		top: -40px;
+		left: 15px;
+	}
+
+	.catalog label {
+		left: 1%;
+	}
+
+	.catalog-next-button{
+		right: 1%;
+	}
+
+	.catalog-prev-button{
+		right: 6%;
+	}
+
+	.basket	{
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.logo img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.contact{
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.brands h2{
+		left: 38%;
+	}
+
+	.contact-email{
+		float: none;	
+		text-align: center;
+	}
+
+	.contact-email span{
+		display: none;
+	}
+
+	.contact-email input{
+		padding: 10px 50px; 
+		margin-bottom: 10px;
+	}
+
+	.contact-email button{
+		padding: 7px 12px; 
+	}
+
+	.contact-social{
+		float: none;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	.contact-social span{
+		margin-top: 15px;
+	}
+
+	.contact-social ul{
+		display: inline-block;
+		float: none;
+	} 
+
+	.clearance img{
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+
+	.carousel-content h2{
+		padding: 0%;
+	}
+
+	.carousel-content h3{
+		padding:0;
+		font-size: 28px;
+	}
+
+	.carousel-content button{
+		margin-top: 10px;
+		padding: 5px;
+	}
+
+	.select-size{
+		padding-top: 0px;
+	}
+
+	.slider-range-wrapper button{
+		margin-top: 0px;
+		float: none;
+	}
+	
+	.slider-range-wrapper p label{
+		display: none;
+	}
+
+	.related-products h2 {
+    left: 40%;
+}
+
+}
+
+@media only screen and (max-width : 640px) {
+
+	.catalog label {
+		display: block;
+	}
+
+	.carousel-container{
+		display: none;
+	}
+
+	.advertising{
+		display: none;
+	}
+
+	.brands h2{
+		left: 35%;
+	}
+
+	.catalog-next-button{
+		bottom: 25%;
+		right: 0%;
+	}
+
+	.catalog-prev-button{
+		bottom: 25%;
+		left: 0%;
+	}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.social-links	{
+		min-height: 120px;
+	}
+
+	.social-links span{
+		text-align: center;
+		padding: 10px 5px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	.catalog label {
+		display: block;
+		left: 0%;
+		height: 45px;
+		padding: 10px 10px;
+		font-family: "ArialRegular";
+		font-size: 12px; 
+	}
+
+	.catalog-next-button,
+	.catalog-prev-button{
+		bottom: 25%;
+	}
+
+	.catalog-next-button{
+		right: 0%;
+	}
+
+	.catalog-prev-button{
+		left: 0%;
+	}
+
+	.clearance{
+		padding-top: 20px;
+	}
+
+	.model .item {
+		min-height: 0px;
+		max-height: 410px;
+	}
+
+	.model .shop-it{
+		left: 15%;
+	}
+
+	.clearance-content hr{
+		margin-top: 50%;
+	}
+
+	
+	footer ul{
+		padding-bottom: 10px;
+	}
+	
+	footer li{
+		display: block;
+		padding-bottom: 5px;
+	}
+
+		.related-products h2 {
+    left: 35%;
+}
+
+	/*
+	=============================================
+	Products (Next Page)
+	=============================================
+	*/
+
+	.colors{
+		float: none;
+		margin-top: 15px;
+	}
+
+	.add-product button{
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
+		padding: 8px;
+	}
+	
+		.related-products h2 {
+    left: 25%;
+}
+	/*
+	=============================================
+	Product (Next Page)
+	=============================================
+	*/
+
+	.social-links	{
+		min-height: 140px;
+		margin-top: 40px;
+	}
+
+	.model .shop-it{
+		top: 20%;
+		left: 10%;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.catalog-next-button,
+	.catalog-prev-button{
+		bottom: -60%;
+	}
+	
+	.model .shop-it{
+		top: 10%;
+		left: 5%;
+	}
+
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.mnu ul{
+		display: block !important;
+	}
+}

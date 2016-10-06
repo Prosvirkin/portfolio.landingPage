@@ -1,0 +1,17 @@
+
+@font-face {
+	font-family: "ArialRegular";
+	src:url(../fonts/ArialRegular/ArialRegular.woff);
+}
+
+@font-face {
+	font-family: "ArialItalic";
+	src:url(../fonts/ArialItalic/ArialItalic.woff);
+}
+
+@font-face {
+	font-family: "ArialBold";
+	src:url(../fonts/ArialBold/ArialBold.woff);
+}
+
+

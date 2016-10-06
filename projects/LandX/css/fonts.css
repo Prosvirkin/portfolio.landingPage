@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "RalewayBold" ;
+	src:url(../fonts/RalewayBold.ttf);
+}
+
+@font-face {
+	font-family:"RalewayMedium";
+	src:url(../fonts/RalewayMedium.ttf);
+}
+
+@font-face {
+	font-family:"RalewaySemiBold";
+	src:url(../fonts/RalewaySemiBold.ttf);
+}
+
+@font-face {
+	font-family:"SourceSansProItalic";
+	src:url(../fonts/SourceSansProItalic.ttf);
+}
+
+@font-face {
+	font-family:"SourceSansProRegular";
+	src:url(../fonts/SourceSansProRegular.ttf);
+}
+
+@font-face {
+	font-family:"WalkwayBlack";
+	src:url(../fonts/WalkwayBlack.ttf);
+}
