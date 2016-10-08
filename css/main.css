@@ -307,6 +307,26 @@ Resume
 	background-color: rgba(0, 0, 0, .6);
 }
 
+.resume-content ul{
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+.resume-content h2{
+	margin: 0;
+	padding: 0;
+}
+
+.knowledge li{	
+ padding: 29px 0px 0px 60px;
+ font-size: 18px;
+ font-family: "RalewaySemiBold";
+ letter-spacing: 2px;
+}
+
+.knowledge li i{	
+ padding-right: 5px;
+}
 
 /* skils */
 

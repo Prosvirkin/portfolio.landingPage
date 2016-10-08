@@ -14,15 +14,34 @@ $(document).ready(function() {
 
 	$(".top-mnu ul li a").click(function(){
 		$(".top-mnu").fadeOut(600);
+		$(".sandwich").toggleClass("active");
 	});
 
 
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
+	$("#about-me").click(function() {
+		$.scrollTo($(".about-me"), 1100, {
+			offset: -150
+		});
+	});
+
+	$("#resume").click(function() {
+		$.scrollTo($(".resume"), 1100, {
+			offset: -150
+		});
+	});
+
+	$("#portfolio").click(function() {
+		$.scrollTo($(".portfolio"), 1100, {
+			offset: -110
+		});
+	});
+
+	$("#contacts").click(function() {
+		$.scrollTo($(".contacts"), 1100, {
+			offset: -50
 		});
 	});
 
