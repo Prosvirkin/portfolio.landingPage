@@ -56,7 +56,7 @@ Header
 */
 
 header{
-	background: url(../img/img_parallax.jpg);
+	background: url(../img/header-background.jpg);
 	min-height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -262,7 +262,7 @@ About me
 */
 .about-me{
 	min-height: 500px;
-	background: url(../img/img_parallax.jpg);
+	background: url(../img/header-background.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -292,7 +292,7 @@ Resume
 
 .resume{
 	min-height: 500px;
-	background: url(../img/img_parallax.jpg);
+	background: url(../img/header-background.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
