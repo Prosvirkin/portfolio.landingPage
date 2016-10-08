@@ -42,6 +42,11 @@ h2{
 	font-family: "RalewaySemiBold";
 }
 
+.pseudo-row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
 
 
 /*
@@ -88,14 +93,15 @@ header{
 }
 
 .toggle-mnu {
-	float: right;
-	border: 1px solid transparent;
+	
+	border: none;
 	background-color: transparent;
 	width: 50px;
 	height: 50px;
 	font-size: 42px;
-	position: relative;
-	margin-top: 20px;
+	position: fixed;
+	top: 3%;
+	right: 10%;
 	z-index: 60;
 }
 
@@ -216,7 +222,262 @@ header{
 
 /* 
 =================================================================
+Caption
+=================================================================
+*/
+.caption{
+	text-align: center;
+	background-color: #222222;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.caption .topic{
+	padding: 20px 0px 30px 0px;
+	text-align: center;
+}
+
+.caption .topic p{
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: "RalewaySemiBold";
+}
+
+.caption .topic hr{
+	width: 150px;
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+
+/* 
+=================================================================
 About me
+=================================================================
+*/
+.about-me{
+	min-height: 500px;
+	background: url(../img/img_parallax.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-me-content{
+	min-height: 350px;
+	width: 100%;
+	margin: 70px auto;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.about-me-content div{
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+
+/* 
+=================================================================
+Resume
+=================================================================
+*/
+
+.resume{
+	min-height: 500px;
+	background: url(../img/img_parallax.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.resume-content{
+	min-height: 350px;
+ 	width: 100%;
+	margin: 70px auto;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+
+/* skils */
+
+.skills-bar-container{
+  margin: 20px auto;
+  width: 80%;
+  min-width: 300px;
+  list-style: none;
+}
+
+.skills-bar-container h3{
+	font-family: "RalewaySemiBold";
+	letter-spacing: 2px;
+}
+
+.skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.skills-bar-container li .progressbar-title {
+  color: #fff;
+}
+.skills-bar-container li .progressbar-title h3 {
+  display: inline-block;
+}
+.skills-bar-container li .progressbar-title .percent {
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+.skills-bar-container li .bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+.skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.skills-bar-container li .bar-container #progress-html {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.skills-bar-container li .bar-container #progress-css {
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+.skills-bar-container li .bar-container #progress-javascript {
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.progressred {
+  background-color: #c0392b;
+}
+
+.progressblue {
+  background-color: #1199ff;
+}
+
+.progresspurple {
+  background-color: #9b59b6;
+}
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+
+
+
+/*
+=================================================================
+Portfolio
 =================================================================
 */
 
@@ -246,7 +507,7 @@ About me
 
 .portfolio .topic hr{
 	width: 150px;
-	margin: 30px auto;
+	margin: 20px auto;
 	background-color: #fff;
 }
 
@@ -264,24 +525,26 @@ About me
 
 .review h3{
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 3px;
 	color: #fff;
-	padding-bottom: 15px;
 	padding-top: 55px;
+	font-family: "RalewaySemiBold";
 }
 
 .review a{
 	display: inline-block;
-	width: 130px;
-	height: 30px;
-	border: 1px solid #fff;
-	padding-top: 2px;
+	width: 140px;
+	height: 40px;
+	font-family: "RalewaySemiBold";
+	border: 3px solid #fff;
+	letter-spacing: 2px;
+	padding-top: 5px;
 	color: #fff;
 }
 
 .review a:hover{
-	border: 1px solid #FF6347;
+	border: 3px solid #FF6347;
 	color: #FF6347;
 	transition: all 0.3s ease;
 }
@@ -328,7 +591,7 @@ Contacts
 */
 
 .contacts{
-	min-height: 850px;
+	min-height: 800px;
 	background-color: #fdfdfd;
 	background-attachment: fixed;
 	background-position: center;
@@ -346,7 +609,8 @@ Contacts
 }
 
 .contacts .topic p{
-	font-size: 13px;
+	font-size: 12px;
+	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-family: "RalewaySemiBold";
@@ -354,16 +618,17 @@ Contacts
 
 .contacts .topic hr{
 	width: 150px;
-	margin: 30px auto;
+	margin: 20px auto;
 	border: 1px solid #000;
 }
 
 .contact{
-	margin-bottom: 50px;
+	margin: 10px 0px 40px 0px;
 }
 
 .contact p{
-	color: #222;
+	color: #888;
+	letter-spacing: 1px;
 }
 
 .contact span{
@@ -382,6 +647,11 @@ Contacts
 	display: block;
 }
 
+.form-group span{
+	font-size: 24px;
+	color: #FF6347;
+}
+
 .form-group input, textarea{
 	display: block;
 	width: 100%;
@@ -395,7 +665,7 @@ Contacts
 }
 
 .form-group input:focus, textarea:focus{
- border:1px solid #FF6347;
+	border:1px solid #FF6347;
 }
 
 .main-form button{
@@ -408,8 +678,46 @@ Contacts
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
+	margin-top: 10px;
 }
 
-.help-block{
-	
+
+/*
+============================================
+Footer
+============================================
+*/
+
+footer{
+	min-height: 100px;
+	background-color: #222222;
+}
+
+.info{
+	padding-top: 20px;
+}
+
+footer small{
+	float: left;
+	padding-top: 25px;
+	color: #888;
+}
+
+footer ul{
+	list-style-type: none;
+	float: right;
+}
+
+footer li{
+	display: inline-block;
+	font-size: 24px;
+	padding-right: 15px;
+}
+
+footer li a{
+	color: #FF6347;
+}
+
+footer li a:hover{
+	font-size: 28px;
 }

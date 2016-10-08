@@ -57,7 +57,7 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-/*	$("form").submit(function() { //Change
+	$(".main-form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
@@ -71,7 +71,29 @@ $(document).ready(function() {
 			}, 1000);
 		});
 		return false;
-});*/
+});
+
+/* Progress bar */
+
+	var lang = {
+  "html": "70%",
+  "css": "70%",
+  "javascript": "40%",
+};
+
+var multiply = 4;
+
+$.each( lang, function( language, pourcent) {
+
+  var delay = 700;
+  
+  setTimeout(function() {
+    $('#'+language+'-pourcent').html(pourcent);
+  },delay*multiply);
+  
+  multiply++;
+
+});
 
 
 });
