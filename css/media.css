@@ -1,27 +1,79 @@
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-width : 1366px) {
+
+	.name	{
+		left: 50%;
+		margin-left: -280px; 
+	}
+
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+
+	.name	{
+		left: 25%;
+		margin-left: 0px;
+	}
+
+
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.name	{
+		left: 20%;
+		margin-left: -50px;
+	}
+
+	.resume-content{
+		padding: 25px 0px 25px 0px;
+	}
+
+
+
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.name	{
+		left: 10%;
+		margin-left: -5px;
+	}
+
+
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+	.name	{
+		left: 5%;
+		right: 5%;
+	}
+
+	.name	h1{
+		font-size: 2em;
+	}
+
+	.resume-content{
+		text-align: left;
+	}
+
+
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+
 
 }
 
@@ -48,7 +100,7 @@
 
 }
 
- /* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
 }

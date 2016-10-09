@@ -46,8 +46,31 @@ h2{
 	margin-left: -15px;
 	margin-right: -15px;
 }
+/*
+=============================================== 
+Preloader
+===============================================
+*/
 
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #222;
+    z-index: 99999;
+}
 
+.spinner {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url("../img/ring-alt.gif") no-repeat 50% 50%;
+    margin: -75px 0 0 -75px;
+}
 
 /*
 ================================================
@@ -90,6 +113,7 @@ header{
 	text-transform: uppercase;
 	text-align: center;
 	animation-delay: 0.2s;
+	font-family: "RalewaySemiBold";
 }
 
 .toggle-mnu {
@@ -275,6 +299,7 @@ About me
 	width: 100%;
 	margin: 70px auto;
 	background-color: rgba(0, 0, 0, .6);
+	padding-bottom: 30px;
 }
 
 .about-me-content div{
@@ -698,7 +723,7 @@ Contacts
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	margin-top: 10px;
+	margin: 10px 0px 20px 0px;
 }
 
 

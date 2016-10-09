@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+	/* preloader */
+
+	$(window).on('load', function () {
+    var $preloader = $('.preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+
+	/* menu */
+
 	$(".toggle-mnu, .menu_item").click(function() {
 		$(".sandwich").toggleClass("active");
 	});
