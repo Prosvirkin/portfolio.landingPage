@@ -299,12 +299,23 @@ About me
 	width: 100%;
 	margin: 70px auto;
 	background-color: rgba(0, 0, 0, .6);
-	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
-.about-me-content div{
-	padding-top: 30px;
+.about-me-content img{
+	display: block;
+	margin: 0px auto;
+	height: 150px;
+	width: 150px;
+	border:1px solid transparent;
+	border-radius: 360px;
+}
+
+
+.about-me-content p{
 	text-align: center;
+	margin: 20px auto;
+	width: 75%;
 }
 
 
@@ -602,8 +613,8 @@ Portfolio
 .carousel .item img{
 	display: block;
 	width: 100%;
-	height: 230px;
-	height: auto;
+	height: 220px;
+	
 }
 
 .carousel .item:hover .review{
