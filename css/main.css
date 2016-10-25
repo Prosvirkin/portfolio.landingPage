@@ -53,23 +53,23 @@ Preloader
 */
 
 .preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #222;
-    z-index: 99999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #222;
+	z-index: 99999;
 }
 
 .spinner {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background: url("../img/ring-alt.gif") no-repeat 50% 50%;
-    margin: -75px 0 0 -75px;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url("../img/ring-alt.gif") no-repeat 50% 50%;
+	margin: -75px 0 0 -75px;
 }
 
 /*
@@ -90,11 +90,16 @@ header{
 }
 
 .name	{
-	position: absolute;
+	/*position: absolute;
+	text-align: center;
+	top: 40%;
+	left: 35%;*/
 	text-align: center;
 	display: block;
-	top: 40%;
-	left: 35%;
+	position: static ;
+	margin: 20% auto;
+	width: 40%;
+
 }
 
 .name h1{
@@ -117,7 +122,6 @@ header{
 }
 
 .toggle-mnu {
-	
 	border: none;
 	background-color: transparent;
 	width: 50px;
@@ -127,6 +131,7 @@ header{
 	top: 3%;
 	right: 10%;
 	z-index: 60;
+	outline: none;
 }
 
 .top-mnu {
@@ -338,7 +343,7 @@ Resume
 
 .resume-content{
 	min-height: 350px;
- 	width: 100%;
+	width: 100%;
 	margin: 70px auto;
 	background-color: rgba(0, 0, 0, .6);
 }
@@ -354,23 +359,23 @@ Resume
 }
 
 .knowledge li{	
- padding: 29px 0px 0px 60px;
- font-size: 18px;
- font-family: "RalewaySemiBold";
- letter-spacing: 2px;
+	padding: 29px 0px 0px 60px;
+	font-size: 18px;
+	font-family: "RalewaySemiBold";
+	letter-spacing: 2px;
 }
 
 .knowledge li i{	
- padding-right: 5px;
+	padding-right: 5px;
 }
 
 /* skils */
 
 .skills-bar-container{
-  margin: 20px auto;
-  width: 80%;
-  min-width: 300px;
-  list-style: none;
+	margin: 20px auto;
+	width: 80%;
+	min-width: 300px;
+	list-style: none;
 }
 
 .skills-bar-container h3{
@@ -379,153 +384,153 @@ Resume
 }
 
 .skills-bar-container li {
-  position: relative;
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+	position: relative;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 .skills-bar-container li .progressbar-title {
-  color: #fff;
+	color: #fff;
 }
 .skills-bar-container li .progressbar-title h3 {
-  display: inline-block;
+	display: inline-block;
 }
 .skills-bar-container li .progressbar-title .percent {
-  position: absolute;
-  top: 25px;
-  right: 5px;
+	position: absolute;
+	top: 25px;
+	right: 5px;
 }
 .skills-bar-container li .bar-container {
-  background: #555;
-  position: relative;
-  width: 100%;
-  height: 5px;
-  margin-top: 5px;
-  display: block;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+	background: #555;
+	position: relative;
+	width: 100%;
+	height: 5px;
+	margin-top: 5px;
+	display: block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
 }
 .skills-bar-container li .bar-container .progressbar {
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 .skills-bar-container li .bar-container #progress-html {
-  -webkit-animation-name: progress-html;
-  animation-name: progress-html;
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s;
+	-webkit-animation-name: progress-html;
+	animation-name: progress-html;
+	-webkit-animation-delay: 1.6s;
+	animation-delay: 1.6s;
 }
 .skills-bar-container li .bar-container #progress-css {
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s;
+	-webkit-animation-name: progress-css;
+	animation-name: progress-css;
+	-webkit-animation-delay: 2.3s;
+	animation-delay: 2.3s;
 }
 .skills-bar-container li .bar-container #progress-javascript {
-  -webkit-animation-name: progress-javascript;
-  animation-name: progress-javascript;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+	-webkit-animation-name: progress-javascript;
+	animation-name: progress-javascript;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
 }
 
 .progressred {
-  background-color: #c0392b;
+	background-color: #c0392b;
 }
 
 .progressblue {
-  background-color: #1199ff;
+	background-color: #1199ff;
 }
 
 .progresspurple {
-  background-color: #9b59b6;
+	background-color: #9b59b6;
 }
 
 @-webkit-keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @-webkit-keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @-webkit-keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
 }
 
 @-moz-keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @-moz-keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @-moz-keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
 }
 
 @keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
 }
 @keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
-  }
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
 }
 
 
@@ -621,11 +626,12 @@ Portfolio
 	opacity: 1;
 }  
 
-.owl-page{
-	position: relative;
-	left: 45%;
-	display: inline-block;
+.owl-pagination{
 	text-align: center;
+}
+
+.owl-page{
+	display: inline-block;
 	width: 12px;
 	height: 12px;
 	margin: 35px 10px;
@@ -718,6 +724,7 @@ Contacts
 	text-indent: 10px;
 	letter-spacing: 2px;
 	color: #888;
+	outline: none;
 }
 
 .form-group input:focus, textarea:focus{
