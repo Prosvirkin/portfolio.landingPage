@@ -1,0 +1,552 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+	text-transform: uppercase;
+	color: #333;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+	text-transform: uppercase;
+	color: #333;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+	text-transform: uppercase;
+	color: #333;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+	text-transform: uppercase;
+	color: #333;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+}
+
+body input:required:valid,
+body textarea:required:valid {	
+}
+
+body {
+	font-family: "TimesNewRomanRegular", sans-serif;
+	font-size: 16px;
+}
+
+span, a, title,{
+	outline: none;
+}
+
+/* 
+=====================================================================
+Header
+=====================================================================
+*/
+
+header{
+	background: url(../images/background-image.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover; 
+	min-height: 600px;
+}
+
+.header-menu{
+	padding-top: 30px;
+}
+
+.header-logo	img{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.header-menu ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.header-menu li{
+	padding-right: 50px;
+	display: inline-block;
+}
+
+.header-menu li a{
+	text-transform: uppercase;
+	color: #1a1a1a;
+	padding-bottom: 5px;
+}
+
+.header-menu li a:hover{
+	border-bottom: 2px solid #1a1a1a;
+}
+
+.toggle-menu{
+	border: 3px solid #000;
+	background-color: transparent;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	padding: 5px 50px;
+}
+
+.toggle-menu:active{
+	transform: translateX(1px);
+}
+
+/*
+=====================================================================
+About us
+=====================================================================
+*/
+.about-us{
+	min-height: 500px;
+}
+
+.about-us-background{
+	background: url(../images/about-us-background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+	position: relative;
+}
+
+.about-us-background h2{
+	position: absolute;
+	left: 35%;
+	top: 35%;
+	text-align: center;
+	border: 8px solid #000;
+	padding: 15px 35px;  
+	text-transform: uppercase;
+	color: #000;
+	font-family: "TimesNewRomanBold";
+	font-size: 36px;
+}
+
+.about-us-content{
+	text-align: center;
+}
+
+.about-us-content img{
+	display: block;
+	margin: 100px auto 20px;
+}
+
+.about-us-content span{
+	font-size: 18px;
+}
+
+.about-us-content p{
+	padding-top: 20px;
+	text-align: left;
+}
+
+/*
+==================================================================================
+Work
+==================================================================================
+*/
+
+.item{
+	margin: 0 -15px 0 -15px;
+	position: relative;
+}
+
+.item img{
+	width: 100%;
+	
+}
+
+.item-review{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(204, 200, 182, .8);
+	opacity: 0;
+	transition: all 0.7s;
+	text-align: center;
+}
+
+.item-review a i{
+	padding-top: 30%;
+}
+
+.item-review ul{
+	list-style-type: none;
+	padding: 20px 0px 0px 30px;
+	margin: 0;
+}
+
+.item-review li{
+	display: inline-block;
+	padding-right: 30px;
+}
+
+
+.item-review li a i{
+	padding-top: 0px;
+}
+
+.item-review a{
+	color: #000;
+	font-size: 28px;
+	outline: none;
+}
+
+.item-review a:hover{
+	color: #337ab7;;
+}
+
+.item:hover .item-review{
+	opacity: 1;
+}
+
+/*
+======================================================
+quote
+======================================================
+*/
+
+.quote{
+	min-height: 350px;
+	background: url(../images/Livello-25.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.quote-content{
+	padding-top: 120px;
+}
+
+.quote-content p{
+	margin: 0;
+	font-size: 24px;
+	font-family: "TimesNewRomanBoldItalic";
+}
+
+.quote-content span{
+	display: block;
+	padding-top: 20px;
+	padding-left: 50%;
+	text-transform: uppercase;
+	font-family: "TimesNewRomanItalic";
+}
+
+/* 
+========================================================
+Team
+========================================================
+*/
+
+.team{
+	min-height: 1000px;
+}
+
+.team-caption{
+	background: url(../images/team-caption-background.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+	position: relative;
+}
+
+.team-caption h2{
+	position: absolute;
+	left: 25%;
+	top: 35%;
+	text-align: center;
+	border: 8px solid #000;
+	padding: 15px 80px;  
+	text-transform: uppercase;
+	color: #000;
+	font-family: "TimesNewRomanBold";
+	font-size: 36px;
+}
+
+.team-member-kat{
+	background: url(../images/Kat-Von-D.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.team-member-corey{
+	background: url(../images/Corey-Miller.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.team-member-review{
+	background-color: #ccc8b6;
+	min-height: 500px;
+	margin: 0 -15px 0 -15px;
+	text-align: center;
+	padding: 0px 25px;
+}
+
+.team-member-review h2{
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 100px 0 20px 0;
+}
+
+.team-member-review p{
+	text-align: left;
+}
+
+.social-links{
+ list-style-type: none;
+ padding: 20px 0px;
+ margin: 0;
+ text-align: center;
+}
+
+.social-links li{
+	display: inline-block;
+	padding-right: 35px;
+	padding-bottom: 20px;
+}
+
+.social-links li a{
+	color: #000;
+	font-size: 28px;
+}
+
+.social-links li a:hover{
+	color: #3ac9e8;
+}
+
+.team-newsletter{
+	min-height: 500px;
+	padding: 0px 100px;
+}
+
+.team-newsletter span{
+	display: block;
+	padding-top: 150px;
+	font-family: "TimesNewRomanBold";
+	text-transform: uppercase;
+}
+
+.team-newsletter p{
+	margin: 0;
+	line-height: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+
+.team-newsletter input{
+	width: 100%;
+	padding: 5px 0;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+	padding-left: 20px;
+}
+
+.team-newsletter button{
+ display: block;
+ width: 100%;
+ border: 1px solid #9a977a;
+ background-color: #9a977a;
+ color: #fff;
+ text-transform: uppercase;
+ padding: 5px 0px;
+}
+
+.team-newsletter button:active{
+	transform: translateX(1px);
+}
+
+
+/*
+=========================================================================
+Social
+=========================================================================
+*/
+
+.social{
+	min-height: 350px;
+	background: url(../images/Livello-25.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.social-content{
+	padding-top: 120px;
+}
+
+.social-content span{
+	font-size: 38px;
+}
+
+.social-content p{
+	margin: 0;
+	font-size: 22px;
+	font-family: "TimesNewRomanItalic";
+}
+
+/*
+===========================================================
+gallery
+===========================================================
+*/
+
+.gallery-header{
+	background-color: #afac9c;
+	min-height: 150px;
+}
+
+.gallery-header h2{
+	display: block;
+	width: 250px;
+	padding: 10px 0;
+	margin: 50px auto;
+	text-align: center;
+	text-transform: uppercase;
+	border: 5px solid #000;
+	color: #000;
+}
+ 
+/*
+=========================================================
+Contact-us
+=========================================================
+*/
+
+.contact-us{
+	min-height: 700px;
+	text-align: center;
+	color: #000;
+	padding-top: 140px;
+	background-color: #e7e5d0;
+}
+
+.contact-us h2{
+	display: block;
+	width: 250px;
+	padding: 10px 0;
+	margin: 0px auto;
+	text-align: center;
+	text-transform: uppercase;
+	border: 5px solid #000;
+	color: #000;
+}
+
+.contact-us p{
+	padding-top: 10px;
+}
+
+.contact-us-content{
+	text-align: left;
+}
+
+.contact-us-content h4{
+	text-transform: uppercase;
+}
+
+.contact-us .social-links{
+	margin-top: 60px;
+}
+
+.contact-us input, 
+.contact-us textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 2px solid #000;
+	background-color: transparent;
+}
+
+.contact-us input {
+	padding: 10px 0px; 
+	padding-left: 15px;
+}
+
+.contact-us textarea{
+	padding: 10px;
+	height: 220px;
+}
+
+.contact-us button{
+	float: left;
+	border: 1px solid #9a977a;
+	background-color: #9a977a;
+	padding: 10px 80px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.contact-us button:active{
+ transform: translateX(1px);
+}
+
+/*
+=======================================================================
+Map
+=======================================================================
+*/
+
+.map iframe {
+	width: 100%;
+}
+
+/*
+========================================================================
+Footer
+========================================================================
+*/
+
+footer{
+	min-height: 400px;
+	background-color: #e7e5d0;
+	margin-top: -10px;
+}
+
+footer .header-menu{
+ padding-top: 100px;
+}
+
+footer small{
+	display: block;
+	margin: 80px auto;
+	text-align: center;
+}
+
+
