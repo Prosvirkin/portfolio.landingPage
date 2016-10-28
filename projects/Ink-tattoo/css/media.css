@@ -30,19 +30,66 @@
 		font-size: 28px;
 	}
 
+	.about-us-background h2{
+		left: 25%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	
+	.about-us-background h2{
+		left: 35%;
+	}
 
+	.about-us-content img {
+    margin: 30px auto 20px;
+}
+
+	.team-caption h2{
+		left: 20%;	
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
 	.about-us-background h2{
-	left: 30%;
-	top: 35%;
+		left: 30%;
+		top: 35%;
+	}
+
+	.about-us-background h2{
+		left: 25%;
+	}
+
+	.team-caption h2{
+		left: 25%;	
+	}
+
+	.team-member-review{
+		border-bottom: 2px solid #000;
+		min-height: 300px;
+	}
+
+	.team-member-review h2{
+	margin: 0;
+	padding: 50px 0 20px 0;
+	text-transform: uppercase;
+}
+
+.contact-us {
+	padding-top: 50px;
+}
+
+.contact-us-content {
+	padding-left: 30px;
+}
+
+.contact-us .social-links {
+
+	margin: 10px 0;
 }
 
 
@@ -51,9 +98,17 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-		.about-us-background h2{
-	left: 20%;
-	top: 35%;
+	.about-us-background h2{
+		left: 15%;
+		top: 35%;
+	}
+
+	.team-caption h2{
+		left: 15%;	
+	}
+
+	.contact-us-content {
+	padding-left: 0px;
 }
 
 }
